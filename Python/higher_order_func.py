@@ -35,3 +35,5 @@ def get_patient_status(get_yob, get_ages, dobs):
     return major
 
 print(get_patient_status(get_yob, get_ages, patient_dobs))
+
+
