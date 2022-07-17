@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="calc.js"></script>
+
+    <style>
+        .center {
+
+            /* width: 80%;  */
+            border: 5px solid green;
+            text-align: center;
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-bottom: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="center">
+        <h1>Calculator</h1>
+        <br>
+        <input type="text" id="display" name="display" value="">
+        <br>
+        <br>
+        <button type="submit" id="1" name="1" value="1" onclick="displayOnClick(this.id)">1</button>
+        <button type="submit" id="2" name="2" value="2" onclick="displayOnClick(this.id)">2</button>    
+        <button type="submit" id="3" name="3" value="3" onclick="displayOnClick(this.id)">3</button>
+        <br>
+        <br>
+        <button type="submit" id="4" name="4" value="4" onclick="displayOnClick(this.id)">4</button>
+        <button type="submit" id="5" name="5" value="5" onclick="displayOnClick(this.id)">5</button>    
+        <button type="submit" id="6" name="6" value="6" onclick="displayOnClick(this.id)">6</button>
+        <br>
+        <br>
+        <button type="submit" id="7" name="7" value="7" onclick="displayOnClick(this.id)">7</button>
+        <button type="submit" id="8" name="8" value="8" onclick="displayOnClick(this.id)">8</button>    
+        <button type="submit" id="9" name="9" value="9" onclick="displayOnClick(this.id)">9</button>
+        <br>
+        <br>
+        <button type="submit" id="0" name="0" value="0" onclick="displayOnClick(this.id)">0</button>
+        <button type="submit" id="+" name="+" value="+" onclick="displayOnClick(this.id)">+</button>    
+        <button type="submit" id="-" name="-" value="-" onclick="displayOnClick(this.id)">-</button>
+        <br>
+        <br>
+        <button type="submit" id="*" name="*" value="*" onclick="displayOnClick(this.id)">*</button>
+        <button type="submit" id="/" name="/" value="/" onclick="displayOnClick(this.id)">/</button>    
+        <button type="submit" id="=" name="=" value="=" onclick="evaluateResult()">=</button> 
+        <br>
+        <br>
+        <button type="submit" id="C" name="C" value="" onclick="clearScreen()">C</button>
+        <br>
+        <br>  
+    
+    </div>
+
+</body>
+</html>
