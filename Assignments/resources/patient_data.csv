@@ -1,0 +1,3 @@
+patient_id,firstName,lastName,gender,age,address__streetAddress,address__city,address__state,phoneNumbers__type,phoneNumbers__number
+1,Joe,Jackson,male,28,101,San Diego,CA,home,7349282382
+2,John,Jackson,male,28,101,San Diego,CA,home,7349282382
