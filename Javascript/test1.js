@@ -43,3 +43,36 @@ name1 = "def"
 let sen = `The name is ${name1}`
 
 console.log(sen)
+
+let a = '5';
+
+let b = 9;
+
+console.log(a+b) // 59 is printed, coersion
+
+function setVal() {
+
+    document.getElementById("in1").value = "xyz value"
+    alert("hi")
+}
+
+function displayOnClick() {
+
+    var t1 = document.getElementById("input1")
+
+}
+
+// closure in javascript is same like closure discussed in python
+
+// elements and events and event handlers in javascript , arrays method in javascript
+
+// type converion and coercion
+
+// truthy values and falsy values in javascript
+
+// 0 '' undefined null NaN ... these 5 return false , else return true
+
+console.log(Boolean(0))
+console.log(Boolean(1))
+
+// == and === equality in javascript
