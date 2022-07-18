@@ -70,7 +70,6 @@ def deleteRecord():
 def updateRecord():
     id = int(input("Enter id of the record to be updated:"))
     choice = int(input("Enter 1 to change first name\nEnter 2 to change last name\nEnter 3 to change gender\nEnter 4 to change age\n"))
-    #print(id)
 
     key = None
 
@@ -94,13 +93,8 @@ def updateRecord():
     list_ = json_res["patients_list"]
     
     for i in range(len(list_)):
-        #print("hellloooooo")
         temp_dict = list_[i]
-        # print(int(temp_dict["patient_id"]))
-        # print(id)
         if(int(temp_dict["patient_id"]) == id):
-            #print("inside if")
-            #print(f"{key} : {value}")
             temp_dict[key] = value
             break
         else:
