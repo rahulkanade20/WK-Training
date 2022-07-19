@@ -18,6 +18,6 @@ function addToList() {
     tSet = new Set(list_);
 
     tSet.forEach(foo)
-    
+
     document.getElementById("result").value = displayRes;
 }
