@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <style>
+        .center {
+
+            /* width: 80%;  */
+            border: 5px solid green;
+            text-align: center;
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-bottom: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h1>Update</h1>
+        <br>
+        <br>
+        <form method="post" enctype=multipart/form-data>
+            <label>Id: </label>
+            <input type="text" name="id1" id="id1" placeholder="Enter id of the record" required>
+            <br>
+            <br>
+            <label>Select field to be updated: </label>
+            <select id="sel1" name="col" required>
+                <option name="opt1">Name</option>
+                <option name="opt2">Age</option>
+                <option name="opt3">Address</option>
+                <option name="opt4">Mobile</option>
+            </select>
+            <br>
+            <br>
+            <label>New Value: </label>
+            <input type="text" name="val" id="val" placeholder="Enter new value" required>
+            <br>
+            <br>
+            <button type="submit" name="ins_sub" id="ins_sub">Submit</button>
+            <br>
+            <br>
+        </form>
+        <br>
+        <br>
+    </div>
+        
+    </div>
+</body>
+</html>

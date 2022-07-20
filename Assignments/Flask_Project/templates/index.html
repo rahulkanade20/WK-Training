@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .center {
+
+            /* width: 80%;  */
+            border: 5px solid green;
+            text-align: center;
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-bottom: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h1>Welcome</h1>
+        <form>
+            <br>
+            <br>
+            <a href={{url_for('insert')}}><input value="Insert" type="button" name="insert" id="insert"></a>
+            <br>
+            <br>
+            <a href={{url_for('update')}}><input value="Update" type="button" name="update" id="update"></a>
+            <br>
+            <br>
+            <a href={{url_for('delete')}}><input value="Delete" type="button" name="delete" id="delete"></a>
+            <br>
+            <br>
+            <a href={{url_for('displayAll')}}><input value="Display" type="button" name="display" id="display"></a>
+            <br>
+            <br>
+        </form>
+    </div>
+</body>
+</html>
