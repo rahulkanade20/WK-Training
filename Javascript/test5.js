@@ -194,5 +194,11 @@ ages9 = [1,2,3,4,5];
 
 console.log(ages9.every(age => {return age>=1}));
 
+// indexOf method
+
+arrz = [1,2,3,4,5];
+
+console.log(arrz.indexOf(5));
+
 // scope change scope and lexical environment
 
