@@ -55,9 +55,11 @@ def delete():
     return render_template('delete.html')
  
 @app.route('/display', methods=['GET', 'POST'])
-def displayAll():    
-    displayString = crud.display_all()
-    return displayString   
+def displayAll():
+    headTuple = ("id", "Name", "Age", "Address", "Mobile", "Status")    
+    displayTuple = crud.display_all()
+    # return displayString
+    return render_template('display.html', heading=headTuple, data = displayTuple)   
     
 
 if __name__ == '__main__':

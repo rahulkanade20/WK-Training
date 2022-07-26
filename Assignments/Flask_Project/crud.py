@@ -70,9 +70,16 @@ def display_all():
     conn = init_connection()
     displayS = ""
     cursor = conn.execute("select * from Patients")
+    list1 = []
     for row in cursor:
         print(row)
-        displayS = displayS + str(row) + '\n'
+        list1.append(row)
+    
+    t1 = tuple(list1)
+    return t1
+    # for row in cursor:
+    #     print(row)
+    #     displayS = displayS + str(row) + '\n'
 
-    print(displayS)
-    return displayS
+    # print(displayS)
+    # return displayS
