@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+</head>
+<body>
+    <h1>Simple http get request</h1>
+
+    <script>
+
+        function httpGet(url, callBack) {
+
+            const request = new XMLHttpRequest();
+
+            request.open('get', url, true);
+
+            request.onload = function () {
+
+                callBack(request);
+            }
+
+            request.send();
+        }
+
+        httpGet('details.txt', function (request) {
+
+            console.log(request.responseText);
+        });
+
+    </script>
+</body>
+</html>
