@@ -1,9 +1,13 @@
-from flask import Flask, flash, request, redirect, url_for, render_template
+# from crypt import methods
+from flask import Flask, flash, jsonify, request, redirect, url_for, render_template
+from flask_cors import CORS
 
 import crud
 
 app = Flask(__name__)
- 
+
+CORS(app)
+
 @app.route('/', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
@@ -59,8 +63,22 @@ def displayAll():
     headTuple = ("id", "Name", "Age", "Address", "Mobile", "Status")    
     displayTuple = crud.display_all()
     # return displayString
-    return render_template('display.html', heading=headTuple, data = displayTuple)   
-    
+    return render_template('display.html', heading=headTuple, data = displayTuple)
+
+
+@app.route('/MJS', methods=['GET', 'POST'])
+def MJS():
+
+    if(request.method == 'POST'):
+        req_data = request.get_json();
+        name, age, address, mobile = req_data.values();
+
+    print(name + " " + age + " " + address + " " + mobile)
+
+    crud.insertRecord(name, address, mobile, age)
+
+    return "success"
+
 
 if __name__ == '__main__':
  

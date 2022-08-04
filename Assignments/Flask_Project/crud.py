@@ -4,7 +4,7 @@ import sqlite3
 
 def init_connection():
     try:
-        con = sqlite3.connect("./resources/patient_db_one.db")
+        con = sqlite3.connect("./resources/patient_db_two.db")
         return con
     except Exception as e:
         print(e)
@@ -18,6 +18,7 @@ def insertRecord(name, address, mobile, age):
     try:
         conn.execute(query)
         conn.commit()
+        print("inserteddd")
     except Exception as e:
         print(e)
 

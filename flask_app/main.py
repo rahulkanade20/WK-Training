@@ -2,6 +2,9 @@
 # An object of Flask class is our WSGI application.
 from pickle import GET
 from flask import Flask, jsonify
+# from flask_cors import CORS
+
+
  
 # Flask constructor takes the name of
 # current module (__name__) as argument.
