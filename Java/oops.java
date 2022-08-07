@@ -28,7 +28,17 @@ public class oops {
     // The derived class must be completely substitutable for the base class  ... based on the inheritance concept
     // social media example ... instead of giving one abstract class break into a number of interfaces
     // and then implement only those interfaces which your app wants to/ support
-    // always recommended to use interface instead of abstract classes 
+    // always recommended to use interface instead of abstract classes
+    
+    // LSV rules - (refer ppt)
+    // 1. contravariance of arguments
+    // 2. covariance of results
+    // 3. exception rule
+    // 4. pre-conditions rule
+    // 5. post-conditions rule
+    
+    // Objects of a super class shall be replacable with objects of its subclass without breaking
+    // the application 
     
     // I - Interface segregation principle
     // The principle states that larger interfaces should be split into smaller ones because we dont want
@@ -39,6 +49,7 @@ public class oops {
     // implementations
     // creditcard debit card example card interface good example for removing tight coupling and going for
     // loose coupling
+    // Top Down Design
 
     // CUPID Principles
 
