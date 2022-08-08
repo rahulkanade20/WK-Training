@@ -6,8 +6,11 @@ This repository has all the code which I did as a part of hands-on during our tr
 The repository consists of 4 main folders - 
 
 Assignments
+
 Python
+
 Javascript
+
 Java
 
 Python , Javascript and Java folders consists of all the code related to what Nagraj sir taught us during our training sessions (for all the concepts, practical implementation was carried out).
