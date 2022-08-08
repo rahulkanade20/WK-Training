@@ -31,11 +31,13 @@ public class oops {
     // always recommended to use interface instead of abstract classes
     
     // LSV rules - (refer ppt)
-    // 1. contravariance of arguments
-    // 2. covariance of results
-    // 3. exception rule
-    // 4. pre-conditions rule
-    // 5. post-conditions rule
+    // 1. contravariance of arguments - the overridden subtype method argument types can be 
+    //                                  identical or wider than the supertype method argument types.
+    // 2. covariance of results - The return type of the overridden subtype method can be narrower 
+    //                            than the return type of the supertype method.
+    // 3. exception rule - The subtype method can throw fewer or narrower (but not any additional or broader) exceptions than the supertype method.
+    // 4. pre-conditions rule - A subtype can weaken (but not strengthen) the precondition for a method it overrides. 
+    // 5. post-conditions rule - The subtype can strengthen (but not weaken) the postcondition for a method it overrides. 
     
     // Objects of a super class shall be replacable with objects of its subclass without breaking
     // the application 
