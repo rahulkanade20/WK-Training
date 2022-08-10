@@ -29,7 +29,7 @@
 // https://www.hello.org:8080
 // scheme:domain:port
 
-// sending messages to teams or writing data to a file directly using flask app
+
 
 
 
