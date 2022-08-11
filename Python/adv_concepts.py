@@ -118,3 +118,18 @@ def outerFunction(text):
 
 myFunction = outerFunction('Hellloooooooo')
 print(f"Value is {myFunction()}")
+
+
+# lambda expressions in python
+
+foo = lambda x,y : x+y
+print(foo(10,20))
+
+# uses of lambda, returning a function
+
+def fun(n):
+    return lambda a : a * n
+
+fiveTimes = fun(5)
+
+print(fiveTimes(15))

@@ -1,5 +1,6 @@
-from functools import reduce
+# map filter reduce
 
+from functools import reduce
 
 patient_dobs = ['21-02-1981', '03-02-2006', '12-01-1950']
 
