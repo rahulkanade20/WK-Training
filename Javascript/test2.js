@@ -1,4 +1,4 @@
-// append and exend
+// append and extend
 
 l1 = [1,2,3]
 
@@ -101,4 +101,3 @@ console.log(date1.getMonth())
 
 console.log(date1.getTime())
 
-// many more methods, refer pdf if required

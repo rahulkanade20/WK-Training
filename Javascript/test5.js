@@ -200,5 +200,5 @@ arrz = [1,2,3,4,5];
 
 console.log(arrz.indexOf(5));
 
-// scope change scope and lexical environment
+
 

@@ -68,11 +68,26 @@ function displayOnClick() {
 
 // type converion and coercion
 
+const value1 = '7';
+const value2 = 9;
+let sum = value1 + value2; // prints 79 implicit conversion into string, coercion
+console.log(sum);
+
+sum = Number(value1) + value2; // prints 16 type conversion
+console.log(sum);
+
+
 // truthy values and falsy values in javascript
 
 // 0 '' undefined null NaN ... these 5 return false , else return true
 
-console.log(Boolean(0))
-console.log(Boolean(1))
+console.log(Boolean(0));
+console.log(Boolean(''));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
 
 // == and === equality in javascript
+
+console.log("9" == 9); // true
+console.log("9" === 9); // false
