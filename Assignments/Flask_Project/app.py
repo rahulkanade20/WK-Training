@@ -43,7 +43,7 @@ def update():
         elif(colname == "Address"):
             act_col = "pAddress"
         elif(colname == "Mobile"):
-            act_col = "pAddress"
+            act_col = "pMobile"
 
         crud.updateRecord(id, act_col, value)
 
